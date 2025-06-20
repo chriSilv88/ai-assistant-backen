@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ai-backend-engine"
+version = "0.1.0"
+description = "Modular LLM orchestration with FastAPI integration"
+authors = ["Christian Silvestri"]
+readme = "README.md"
+packages = [{ include = "ai_backend_engine" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+fastapi-poe = "^0.0.3"
+langchain = "^0.0.170"
+openai = "^0.27.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
